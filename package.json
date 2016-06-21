@@ -2,9 +2,11 @@
   "name": "chain",
   "version": "0.0.1",
   "description": "iterable chain",
-  "main": "buil/chain.js",
+  "main": "built/chain.js",
+  "typings": "built/chain.d.ts",
   "scripts": {
     "test": "mocha built",
+    "postinstall": "tsd install && npm run build",
     "build": "tsc -p ."
   },
   "repository": {
