@@ -1,0 +1,29 @@
+{
+  "name": "chain",
+  "version": "0.0.1",
+  "description": "iterable chain",
+  "main": "buil/chain.js",
+  "scripts": {
+    "test": "mocha built",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D10221/chain.git"
+  },
+  "keywords": [
+    "iterable",
+    "chain",
+    "typescript"
+  ],
+  "author": "D10221",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D10221/chain/issues"
+  },
+  "homepage": "https://github.com/D10221/chain#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
