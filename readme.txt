@@ -1,6 +1,7 @@
 export declare class Chain<T> {
     private iterable;
-    static sequence<T>(_from: T | (() => T), next: (x: T) => T, completed: (x: T) => boolean): Chain<T>;
+    static sequence<T>(_from: T | (() => T),
+          next: (x: T) => T, completed: (x: T) => boolean): Chain<T>;
     static from<T>(ts: T[]): Chain<T>;
     constructor(iterable: IterableIterator<T>);
     values: IterableIterator<T>;
