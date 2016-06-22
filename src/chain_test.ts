@@ -47,6 +47,15 @@ describe('Chain', () => {
         assert.equal(Chain.from(["x", "y"]).skip(1).first(), 'y');
         assert.equal(Chain.from(["x", "y","z"]).skip(2).first(), 'z');                    
      })
+
+     it('toArray',()=>{
+         let a = Chain.from(['1', '2']).toArray();
+         assert.isTrue(
+             Array.isArray(a)
+             && a.length == 2 
+             && a[0] =='1' 
+             && a[1] == '2');
+     })
     
     
 });
