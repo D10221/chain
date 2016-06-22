@@ -93,5 +93,9 @@ export class Chain<T> {
     first(predicate?: (x:T)=> boolean ) : T {
         return first(this.values, predicate);
     }
+    
+    toArray() : T[]{
+        return  Array.from(this.iterable);
+    }
 
 }
