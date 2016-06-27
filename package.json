@@ -5,9 +5,8 @@
   "main": "built/chain.js",
   "typings": "built/chain.d.ts",
   "scripts": {
-    "test": "mocha built",
-    "postinstall": "tsd install && npm run build",
-    "build": "tsc -p ."
+    "test": "npm run build && mocha built",    
+    "build": "typings install && tsc -p ."
   },
   "repository": {
     "type": "git",
