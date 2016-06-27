@@ -6,7 +6,7 @@
   "typings": "built/chain.d.ts",
   "scripts": {
     "test": "npm run build && mocha built",    
-    "build": "typings install && tsc -p ."
+    "build": "tsc -p ."
   },
   "repository": {
     "type": "git",
